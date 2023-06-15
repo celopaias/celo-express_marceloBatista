@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            display: flex;
+            height:100%;
+        }
+        form{
+            margin: auto;
+            border:1px solid #CCC;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 500px;
+        }
+        h3{
+            font-size:22px;
+        }
+        .form-text{
+            border:1px solid #CCC;
+            color:#6e6e6e;
+            float:left;
+            clear: both;
+            margin:10px;
+            font-size: 14px;
+            padding-left:10px;
+            padding-top:10px;
+            height:40px;
+            width:90%;
+            border-radius: 10px;
+        }
+
+        .form-textarea{
+            border:1px solid #CCC;
+            color:#6e6e6e;
+            float:left;
+            clear: both;
+            margin:10px;
+            font-size: 14px;
+            padding-left:10px;
+            height: 40px;
+            width: 90%;
+            border-radius: 10px;
+            padding-top:10px;
+        }
+        .button-form{
+            float: left;
+            clear: both;
+            margin: 10px;
+            font-size: 18px;
+            border:none;
+            background-color:#373737;
+            color:#FFF;
+            border-radius: 10px;
+            padding:10px;
+            width: 90%;;
+        }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de React</title>
+    <script>
+        function validaForm(){
+            let nome = document.getElementById('nome').value;
+            let email = document.getElementById('email').value;
+            let comentario = document.getElementById('comentario').value;
+
+            console.log(nome)
+            console.log(email)
+            console.log(comentario)
+
+            if(nome === '' || email ===''|| comentario=== '' ){
+
+                alert("Por favor, preencha todos os formulários")
+        
+            }
+            else{
+                alert('Formulário enviado com sucesso')
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+<form>
+<h3>Formulário de exercício - CoderHouse</h3>
+<input type="text" class="form-text" id="nome" placeholder="Digite seu nome" name="nome"/>
+<input type="text" class="form-text" id="email" name="e-mail" placeholder="Digite seu e-mail"/>
+<textarea type="text" class="form-textarea"id="comentario"placeholder="Digite seu comentário" name="comentário"></textarea>
+    <button type="submit" class="button-form" onclick='validaForm()'>Enviar</button>
+</form>
+</div>    
+</body>
+</html>

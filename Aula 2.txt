@@ -1,0 +1,14 @@
+https://coderhouse.typeform.com/to/IGXrWZPO
+
+codigo:45480
+
+const = não pode mudar
+let = pode mudar
+
+função arrow = arrow function
+
+var minhaFuncao = (num) => num +  num
+
+Importante estudar
+
+map, filter, reduce
