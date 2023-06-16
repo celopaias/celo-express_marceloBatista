@@ -1,14 +1,13 @@
-https://coderhouse.typeform.com/to/IGXrWZPO
+Node
 
-codigo:45480
+É um ambiente de execução de javascript que permite que o codigo js seja executado em nosso pc.
 
-const = não pode mudar
-let = pode mudar
+Existem outros ambientes:
+Deno
 
-função arrow = arrow function
+Deno é um ambiente novo mas com uma nova perspectiva de segurança. O criador é um dos pais do NodeJS.
 
-var minhaFuncao = (num) => num +  num
+NPM - 
 
-Importante estudar
-
-map, filter, reduce
+Node Package Manager (Gerenciador de pacotes do Node) - Gerencia os pacotes de módulos 
+Ajuda a instalar e desinstalar pacotes e gerenciar versões e dependencias necessárias para executar um projeto.
